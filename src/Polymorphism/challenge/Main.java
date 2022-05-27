@@ -2,14 +2,14 @@ package Polymorphism.challenge;
 
 
 
-//                construtor should initialze cylinders (number of) and name, and set wheels to 4
+//                constructor should initialize cylinders (number of) and name, and set wheels to 4
 //        and engine to true. cylinders and names would be passed parameters
 //        create appropriate getters
 
 
 //        create some methods like startEngine, accelerate, and brake
 //        show a message for each in the base class
-//now create 3 sub classes for your favorite vehicles
+//now create 3 subclasses for your favorite vehicles
 //        override the appropriate methods to demonstrate polymorphism in use
 //        put all classes in the one java file (this one).
 
