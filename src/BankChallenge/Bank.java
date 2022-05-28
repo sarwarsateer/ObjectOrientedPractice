@@ -81,7 +81,7 @@ public class Bank {
                     System.out.println("Transactions");
                     ArrayList<Double> customerTransactions = branchCustomer.get(i).getTransactions();
                     for (int j = 0; j < customerTransactions.size(); j++) {
-                        System.out.println("[" + (j + 1) + "] Amount " + customerTransactions.get(i));
+                        System.out.println("[" + (j + 1) + "] Amount " + customerTransactions.get(j));
                     }
                 }
             }

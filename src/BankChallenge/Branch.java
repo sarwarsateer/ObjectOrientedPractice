@@ -24,9 +24,9 @@ public class Branch {
     }
 
     public boolean addCustomerTransaction(String customerName, double amount) {
-        Customer existingCustomer = findCustomer(customerName);
-        if (existingCustomer != null) {
-            existingCustomer.addTransaction(amount);
+        Customer currentCustomer = findCustomer(customerName);
+        if (currentCustomer != null) {
+            currentCustomer.addTransaction(amount);
             return true;
         }
         return false;

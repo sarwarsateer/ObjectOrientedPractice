@@ -15,7 +15,7 @@ public class Main {
     bank.addCustomerTransaction("Kabul", "Khalid", 30.5);
     bank.addCustomerTransaction("Kabul", "Sarwar", 20.5);
 
-    bank.listCustomers("Kabul", false);
+    bank.listCustomers("Kabul", true);
     }
 
 }
