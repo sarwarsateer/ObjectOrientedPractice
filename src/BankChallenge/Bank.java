@@ -34,7 +34,7 @@ public class Bank {
         branches = new ArrayList<>();
     }
 
-    public boolean addBraches(String name) {
+    public boolean addBrach(String name) {
         Branch currentBranch = findBranch(name);
         if (currentBranch == null) {
             this.branches.add(new Branch(name));
