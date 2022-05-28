@@ -2,28 +2,12 @@ package BankChallenge;
 
 import java.util.ArrayList;
 
-//Your job is to create a simple banking application.
-//There should be a Bank class
-//it should have an arraylist of branches
-//Each branch should have an arraylist of customers
-//The customer class should have an arraylists of doubles (transactions)
-//Customer:
-//name, and the arraylist of doubles.
-//Branch:
-//need to be able to add a new customer and initial transaction amount.
-//also needs to add additional transaction for that customer/branch
-//Bank:
-//add a new branch
-//add a customer to that branch with initial transaction
-//add a transaction for an existing customer for that branch
-//        show a list of customers for a particular branch and optionally a list
-//        of their transactions.
-//demonstration autoboxing and unboxing in your code
-//hint: transactions
-//add data validation
-//        e.g. check if exists, or does not exist, etc.
-//think about where you are adding the code to perform certain actions
+
 public class Bank {
+
+    public String getName() {
+        return name;
+    }
 
     private String name;
     private ArrayList<Branch> branches;
@@ -34,7 +18,7 @@ public class Bank {
         branches = new ArrayList<>();
     }
 
-    public boolean addBrach(String name) {
+    public boolean addBranch(String name) {
         Branch currentBranch = findBranch(name);
         if (currentBranch == null) {
             this.branches.add(new Branch(name));
